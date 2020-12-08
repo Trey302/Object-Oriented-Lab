@@ -54,5 +54,22 @@ class Smartphone {
 
 // Prompt 2: Add the following parameters to the constructor method and set it equal to the parameters. OS, model, app market, company.
 class Smartphone {
-    constructor(OS, model, appmarket, company) {  }
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
   }
+
+//   Prompt 3: Create 1 new instance named phone1 for the Smartphone class.
+class Smartphone {
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
+  }
+
+  const phone1 = new Smartphone('ios, iphone 12, app store, apple')
