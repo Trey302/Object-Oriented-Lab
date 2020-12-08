@@ -45,6 +45,9 @@ whiskers.size = "small";
 // Prompt 11: Add a property called diet with a value of kitty mix using bracket notation.
 whiskers["diet"] = "kitty mix";
 
+
+
+
 // Classes Prompts
 
 // Prompt 1: Create a class called Smartphone and add an empty constructor method to the Smartphone class.
@@ -183,3 +186,79 @@ class Smartphone {
   const phone2 = new Smartphone('android', 'Galaxy S20 FE 5G', 'play store', 'Samsung', 'Mmm Mmm');
 
   phone2["call"]();
+
+//   Prompt 10: Add a method to the Smartphone class called changeRingtone. This method should receive one parameter, representing the new ringtone. It shouldn’t return anything. The object of the method is to change the value of the ringtone property.
+class Smartphone {
+    constructor(OS, model, app_market, company, ringtone) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+        this.ringtone = ringtone;
+     }
+
+     call () {
+    console.log(this.ringtone);  
+     }
+
+     changeRingtone(ringtone) {
+        this.ringtone = ringtone;
+     }
+
+  }
+
+  const phone1 = new Smartphone('ios', 'iphone 12', 'app store', 'apple', 'beep beep');
+
+  const phone2 = new Smartphone('android', 'Galaxy S20 FE 5G', 'play store', 'Samsung', 'Mmm Mmm');
+
+//   Prompt 11: Call the changeRingtone method and change the ringtone to “Beyonce” for phone1 using dot notation.
+class Smartphone {
+    constructor(OS, model, app_market, company, ringtone) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+        this.ringtone = ringtone;
+     }
+
+     call () {
+    console.log(this.ringtone);  
+     }
+
+     changeRingtone(ringtone) {
+        this.ringtone = ringtone;
+     }
+
+  }
+
+  const phone1 = new Smartphone('ios', 'iphone 12', 'app store', 'apple', 'beep beep');
+
+  const phone2 = new Smartphone('android', 'Galaxy S20 FE 5G', 'play store', 'Samsung', 'Mmm Mmm');
+
+  phone1.changeRingtone() = 'Beyonce';
+
+//   Prompt 11: Call the changeRingtone method and change the ringtone to “Drake” for phone2 using bracket notation.
+class Smartphone {
+    constructor(OS, model, app_market, company, ringtone) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+        this.ringtone = ringtone;
+     }
+
+     call () {
+    console.log(this.ringtone);  
+     }
+
+     changeRingtone(ringtone) {
+        this.ringtone = ringtone;
+     }
+
+  }
+
+  const phone1 = new Smartphone('ios', 'iphone 12', 'app store', 'apple', 'beep beep');
+
+  const phone2 = new Smartphone('android', 'Galaxy S20 FE 5G', 'play store', 'Samsung', 'Mmm Mmm');
+
+  phone1["changeRingtone"]() = 'Drake';
