@@ -262,3 +262,190 @@ class Smartphone {
   const phone2 = new Smartphone('android', 'Galaxy S20 FE 5G', 'play store', 'Samsung', 'Mmm Mmm');
 
   phone1["changeRingtone"]() = 'Drake';
+
+
+
+
+//   Getters & Setter Prompts
+
+// Prompt 12: Create a getter method called businessCalls that retrieves todays date and time.
+class Smartphone {
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
+
+    get businessCalls() {
+        const today = new Date();
+        const hour = today.getHours();
+    }
+  }
+
+//   Prompt 12: Write a conditional in getter method that if the time is greater than 10 and less than 21 then return "phone has been ringing all day!". If not, then it will return "phone on nighttime mode".
+class Smartphone {
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
+
+    get businessCalls() {
+        const today = new Date();
+        const hour = today.getHours();
+         
+        if (hour > 10 && hour <= 21) {
+            return "phone has been ringing all day!"
+        } else {
+            return "phone on nighttime mode"
+        }
+    }
+
+  }
+
+//   Prompt 12: Print the value of the businessCalls to the console using dot and bracket notation (on separate lines).
+class Smartphone {
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
+
+    get businessCalls() {
+        const today = new Date();
+        const hour = today.getHours();
+         
+        if (hour > 10 && hour <= 21) {
+            return "phone has been ringing all day!"
+        } else {
+            return "phone on nighttime mode"
+        }
+    }
+
+  }
+
+  const phone1 = new Smartphone('ios', 'iphone 12', 'app store', 'apple', 'beep beep');
+
+  const phone2 = new Smartphone('android', 'Galaxy S20 FE 5G', 'play store', 'Samsung', 'Mmm Mmm');
+
+  phone1.businessCalls;
+
+  phone1["businessCalls"];
+
+//   Prompt 13: Create a setter method called phoneOwner with a parameter of phoneOwner.
+class Smartphone {
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
+
+    get businessCalls() {
+        const today = new Date();
+        const hour = today.getHours();
+         
+        if (hour > 10 && hour <= 21) {
+            return "phone has been ringing all day!"
+        } else {
+            return "phone on nighttime mode"
+        }
+    }
+
+    set phoneOwner(phoneOwner){
+
+    }
+
+  }
+
+//   Prompt 14: Add a console log inside the setter method to make sure it has been called.
+class Smartphone {
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
+
+    get businessCalls() {
+        const today = new Date();
+        const hour = today.getHours();
+         
+        if (hour > 10 && hour <= 21) {
+            return "phone has been ringing all day!"
+        } else {
+            return "phone on nighttime mode"
+        }
+    }
+
+    set phoneOwner(phoneOwner){
+        this._phoneOwner = phoneOwner;
+        console.log(`setter called: ${phoneOwner}`);
+    }
+
+  }
+
+//   Prompt 15: Create a getter method called phoneOwner.
+class Smartphone {
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
+
+    get businessCalls() {
+        const today = new Date();
+        const hour = today.getHours();
+         
+        if (hour > 10 && hour <= 21) {
+            return "phone has been ringing all day!"
+        } else {
+            return "phone on nighttime mode"
+        }
+    }
+
+    get phoneOwner(){
+
+    }
+
+    set phoneOwner(phoneOwner){
+        this._phoneOwner = phoneOwner;
+        console.log(`setter called: ${phoneOwner}`);
+    }
+
+  }
+
+//   Prompt 16: Add an owner of phone1 named John using bracket notation and print owner to the console.
+class Smartphone {
+    constructor(OS, model, app_market, company) { 
+        this.OS = OS;
+        this.model = model;
+        this.app_market = app_market;
+        this.company = company;
+     }
+
+    get businessCalls() {
+        const today = new Date();
+        const hour = today.getHours();
+         
+        if (hour > 10 && hour <= 21) {
+            return "phone has been ringing all day!"
+        } else {
+            return "phone on nighttime mode"
+        }
+    }
+
+    get phoneOwner(){
+
+    }
+
+    set phoneOwner(phoneOwner){
+        this._phoneOwner = phoneOwner;
+        console.log(`setter called: ${phoneOwner}`);
+    }
+
+  }
