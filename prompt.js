@@ -449,3 +449,13 @@ class Smartphone {
     }
 
   }
+
+  const phone1 = new Smartphone('ios', 'iphone 12', 'app store', 'apple', 'beep beep');
+
+  const phone2 = new Smartphone('android', 'Galaxy S20 FE 5G', 'play store', 'Samsung', 'Mmm Mmm');
+
+  phone1["phoneOwner"] = 'John'
+  console.log(phone1.phoneOwner)
+
+  phone2.phoneOwner = 'Jane'
+  console.log(phone2.phoneOwner)
